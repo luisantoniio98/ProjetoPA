@@ -22,23 +22,23 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        User =(EditText)findViewById(R.id.editTextUser);
-        Pw = (EditText)findViewById(R.id.editTextpw);
-        Info = (TextView)findViewById(R.id.Attempts);
-        Login = (Button)findViewById(R.id.btnLogin);
+        User = (EditText) findViewById(R.id.editTextUser);
+        Pw = (EditText) findViewById(R.id.editTextpw);
+        Info = (TextView) findViewById(R.id.Attempts);
+        Login = (Button) findViewById(R.id.btnLogin);
 
         Info.setText("Number of attempts remaining: 3");
 
         Login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                validate(User.getText().toString(),Pw.getText().toString());
+                validate(User.getText().toString(), Pw.getText().toString());
             }
         });
     }
 
     private void validate(String userName, String userPassword){
-        if((userName == "Admin") && (userPassword == "1234")){
+        if((userName.equals("Admin")) && (userPassword.equals("1234"))){
             Intent intent = new Intent(Login.this, Home.class);  //Começar ativity home
             startActivity(intent);
         }else{
