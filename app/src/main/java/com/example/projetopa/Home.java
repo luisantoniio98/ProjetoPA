@@ -9,16 +9,22 @@ import android.widget.Button;
 
 public class Home extends AppCompatActivity {
 
-    private Button addPacient = (Button)findViewById(R.id.addpaciente);
-    private Button editPaciente = (Button)findViewById(R.id.editpaciente);
-    private Button delPaciente = (Button)findViewById(R.id.delpaciente);
-    private Button verTabela = (Button)findViewById(R.id.vertabela);
+    private Button addPacient;
+    private Button editPaciente;
+    private Button delPaciente;
+    private Button verTabela ;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        addPacient = (Button) findViewById(R.id.addpaciente);
+        editPaciente = (Button) findViewById(R.id.editpaciente);
+        delPaciente = (Button) findViewById(R.id.delpaciente);
+        verTabela = (Button) findViewById(R.id.vertabela);
+
 
         addPacient.setOnClickListener(new View.OnClickListener() {
             @Override
