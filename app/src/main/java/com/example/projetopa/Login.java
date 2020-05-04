@@ -27,7 +27,7 @@ public class Login extends AppCompatActivity {
         Info = (TextView) findViewById(R.id.Attempts);
         Login = (Button) findViewById(R.id.btnLogin);
 
-        Info.setText("Number of attempts remaining: 3");
+        Info.setText("Número de tentativas restantes: 3");
 
         Login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,7 +44,7 @@ public class Login extends AppCompatActivity {
         }else{
             counter--; //baixar nº de tentativas quando falha o login
 
-            Info.setText("Number of attempts remaining:" + counter);
+            Info.setText("Número de tentativas restantes:" + counter);
 
             if(counter == 0){
                 Login.setEnabled(false); // Dar disable no butao quando counter chega a 0
