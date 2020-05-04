@@ -10,7 +10,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#009688"
-        tools:context=".AddPaciente">
+        tools:context=".AddPaciente"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="-105dp">
 
         <EditText
             android:id="@+id/editText"
