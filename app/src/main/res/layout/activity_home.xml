@@ -11,51 +11,65 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
         android:text="COVID-19                            EM                             PORTUGAL"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="36sp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="60dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/editpaciente"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
         android:text="Editar Informação de  Paciente"
-        tools:layout_editor_absoluteX="75dp"
-        tools:layout_editor_absoluteY="485dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/delpaciente" />
 
     <Button
         android:id="@+id/vertabela"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
         android:text="Ver Tabela"
-        tools:layout_editor_absoluteX="153dp"
-        tools:layout_editor_absoluteY="556dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editpaciente" />
 
     <Button
         android:id="@+id/delpaciente"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
         android:text="Eliminar Paciente"
-        tools:layout_editor_absoluteX="126dp"
-        tools:layout_editor_absoluteY="371dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addpaciente" />
 
     <Button
         android:id="@+id/addpaciente"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
         android:text="Adicionar Paciente"
-        tools:layout_editor_absoluteX="121dp"
-        tools:layout_editor_absoluteY="267dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="84dp"
         android:layout_height="85dp"
-        app:srcCompat="@drawable/covid"
-        tools:layout_editor_absoluteX="43dp"
-        tools:layout_editor_absoluteY="140dp" />
+        android:layout_marginTop="168dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.155"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/covid" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
